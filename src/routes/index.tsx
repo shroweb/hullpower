@@ -102,8 +102,8 @@ function Index() {
                 <div className="flex items-center gap-1 text-[#F5C518]">
                   {Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
                 </div>
-                <div className="mt-1 font-display text-sm font-bold text-white">5.0 average</div>
-                <div className="text-[11px] uppercase tracking-wider text-white/50">From local Google reviews</div>
+                <div className="mt-1 font-display text-sm font-bold text-white">5.0 · 164 reviews</div>
+                <div className="text-[11px] uppercase tracking-wider text-white/50">Google · Hull Power Ltd</div>
               </div>
             </div>
           </Reveal>
@@ -163,7 +163,7 @@ function Index() {
             { k: "Established", v: "2014", sub: "Hull-based, family-run" },
             { k: "Engineers", v: "5", sub: "All NAPIT-registered" },
             { k: "Avg. response", v: "< 24h", sub: "Same day on emergencies" },
-            { k: "Google reviews", v: "5.0★", sub: "Across 80+ verified jobs" },
+            { k: "Google reviews", v: "5.0★", sub: "164 verified reviews" },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 60}>
               <div>

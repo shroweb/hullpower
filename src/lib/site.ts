@@ -131,39 +131,33 @@ export const WORK = [
 
 export const TESTIMONIALS = [
   {
-    name: "Janet M.",
-    area: "Cottingham",
-    text: "Had them rewire our 1930s semi last spring — bit of a big job but they were done in three days, worked around us being in the house the whole time and left everywhere clean. Certificate came through same evening. Wouldn't hesitate.",
-    service: "Full Rewire",
+    name: "Amy Bray",
+    area: "Hull",
+    text: "Scott came to set up our Nest doorbell. We were really impressed with the service — prompt communication from Chantelle via email, and Scott was really helpful and kindly took the time to explain all the functions of the Nest app too. We will definitely use Hull Power Ltd again.",
+    service: "Nest Doorbell",
   },
   {
-    name: "Steve H.",
-    area: "Hessle",
-    text: "Got a Zappi charger put in for the Tesla. Craig came out same week, sorted it in a few hours and walked me through the app and off-peak tariffs before he left. Dead easy from start to finish.",
-    service: "EV Charger",
-  },
-  {
-    name: "Louise B.",
-    area: "Beverley",
-    text: "They fitted a Nest doorbell, two outdoor cameras and a Protect in the kitchen. All linked up properly and they showed us how to use everything on the phone before they left. Very neat cable runs too — not a mess in sight.",
-    service: "Smart Home",
-  },
-  {
-    name: "Tony R.",
-    area: "Anlaby",
-    text: "Trip kept going on our board late on a Tuesday night. Rang up, back to me in 20 minutes and round first thing Wednesday. Loose neutral in the garage socket — found it, fixed it, good as new. Reasonable price for an emergency job.",
-    service: "Fault Finding",
-  },
-  {
-    name: "Karen S.",
-    area: "Willerby",
-    text: "Needed an EICR for the rental on Beverley Road before new tenants moved in. Booked Monday, done Wednesday, cert through Thursday. No fuss, fair price.",
+    name: "Alex Wilson",
+    area: "Hull",
+    text: "Scott carried out an EICR inspection on our property. He was very polite and professional. Scott explained what he was doing throughout the process and he carried out a very thorough inspection. Chantelle provided excellent communication throughout.",
     service: "EICR",
   },
   {
-    name: "Phil D.",
-    area: "Kirk Ella",
-    text: "The garden lighting looks brilliant — they ran cables under the lawn for the pathway lights and mounted spots along the back fence. Did exactly what we discussed, no mess, and they were back within the week to finish off.",
-    service: "Garden Lighting",
+    name: "Karl Alliban",
+    area: "Hull",
+    text: "An excellent service from Scott from Hull Power. I'm typically not very trusting of tradesmen as I watched too many episodes of Rogue Traders in the noughties. However, I'm pleased to report that Scott is a normal, hard-working and thoroughly decent bloke.",
+    service: "General Electrical",
+  },
+  {
+    name: "Jonathan Townend",
+    area: "Hull",
+    text: "Contacted Hull Power regarding replacement of a bathroom extractor fan. Their communication was excellent and they advised the best course of action throughout the whole process.",
+    service: "Electrical",
+  },
+  {
+    name: "John Cooke",
+    area: "Hull",
+    text: "We had some LED lights fitted to the side of our stairway to create a softer lighting for this area. This was the first time Scott had done this and he did a fantastic job. Chantelle is always a phone call or a message away.",
+    service: "LED Lighting",
   },
 ];
