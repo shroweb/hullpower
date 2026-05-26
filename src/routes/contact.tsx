@@ -19,7 +19,7 @@ function Contact() {
     <Layout>
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 circuit-bg opacity-60" />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <Reveal>
             <span className="text-xs font-semibold uppercase tracking-wider text-[#F5C518]">Get in touch</span>
             <h1 className="mt-2 font-display text-5xl font-extrabold tracking-tight text-white sm:text-6xl">

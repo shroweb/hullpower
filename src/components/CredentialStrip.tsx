@@ -5,9 +5,9 @@ import nestProLogo from "@/assets/logos/nest-pro.png";
 type Variant = "napit" | "trustmark" | "nest" | "ozev" | "insured";
 
 const LOGOS: Partial<Record<Variant, { src: string; alt: string; className: string }>> = {
-  napit:     { src: napitLogo,     alt: "NAPIT Registered Installer",      className: "h-8 w-auto" },
-  trustmark: { src: trustmarkLogo, alt: "TrustMark Government Endorsed",   className: "h-7 w-auto" },
-  nest:      { src: nestProLogo,   alt: "Google Nest Certified Professional", className: "h-8 w-auto" },
+  napit:     { src: napitLogo,     alt: "NAPIT Registered Installer",        className: "h-7 w-auto sm:h-8" },
+  trustmark: { src: trustmarkLogo, alt: "TrustMark Government Endorsed",     className: "h-6 w-auto sm:h-7" },
+  nest:      { src: nestProLogo,   alt: "Google Nest Certified Professional", className: "h-7 w-auto sm:h-8" },
 };
 
 const TEXT_FALLBACK: Partial<Record<Variant, string>> = {
@@ -17,12 +17,13 @@ const TEXT_FALLBACK: Partial<Record<Variant, string>> = {
 
 export function CredentialStrip({ items }: { items: Variant[] }) {
   return (
-    <ul className="flex flex-wrap items-center gap-6">
+    <ul className="flex flex-wrap items-center gap-x-5 gap-y-3 sm:gap-x-7">
       {items.map((k, i) => {
         const logo = LOGOS[k];
         const text = TEXT_FALLBACK[k];
         return (
-          <li key={k} className={`flex items-center ${i > 0 ? "border-l border-white/15 pl-6" : ""}`}>
+          <li key={k} className="flex items-center gap-5 sm:gap-7">
+            {i > 0 && <span className="h-5 w-px bg-white/15" aria-hidden />}
             {logo ? (
               <img
                 src={logo.src}

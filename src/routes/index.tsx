@@ -43,7 +43,7 @@ function Index() {
         <div className="absolute inset-0 grid-lines opacity-30" />
         <div className="pointer-events-none absolute -top-40 right-[-10%] h-[520px] w-[680px] rounded-full bg-[#F5C518]/10 blur-3xl" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:pb-28 lg:pt-24">
+        <div className="relative mx-auto grid max-w-7xl gap-8 px-4 pb-14 pt-10 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:pb-28 lg:pt-24">
           <div className="lg:col-span-7">
             <Reveal>
               <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
@@ -52,19 +52,19 @@ function Index() {
               </div>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="mt-6 max-w-3xl font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-[5.5rem]">
+              <h1 className="mt-4 max-w-3xl font-display text-[2.75rem] font-extrabold leading-[1.02] tracking-tight text-white sm:mt-6 sm:text-6xl lg:text-[5.5rem]">
                 Hull's trusted electricians.
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-xl text-lg text-white/70 sm:text-xl">
+              <p className="mt-4 max-w-xl text-base text-white/70 sm:mt-6 sm:text-xl">
                 A small Hull-based team of qualified sparks. Domestic rewires,
                 commercial fit-outs, EV chargers and proper Google Nest installs —
                 booked in, done right, certified on completion.
               </p>
             </Reveal>
             <Reveal delay={240}>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 flex flex-col gap-3 sm:mt-9 sm:flex-row">
                 <a
                   href={BOOK_URL}
                   target="_blank"
@@ -82,12 +82,12 @@ function Index() {
               </div>
             </Reveal>
             <Reveal delay={320}>
-              <p className="mt-6 text-sm text-white/55">
+              <p className="mt-4 text-sm text-white/55 sm:mt-6">
                 No call-out fee · Free quotes · Same-day response on most jobs
               </p>
             </Reveal>
             <Reveal delay={400}>
-              <div className="mt-10 border-t border-white/10 pt-7">
+              <div className="mt-6 border-t border-white/10 pt-5 sm:mt-10 sm:pt-7">
                 <CredentialStrip items={["napit", "trustmark", "nest", "insured"]} />
               </div>
             </Reveal>
@@ -95,7 +95,7 @@ function Index() {
 
           <Reveal delay={200} className="lg:col-span-5">
             <div className="relative">
-              <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+              <div className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5 lg:aspect-[4/5]">
                 <img src={van} alt="Hull Power Ltd Google Nest Pro Installer van" className="h-full w-full object-cover" />
               </div>
               <div className="absolute -bottom-5 -left-5 hidden rounded-xl border border-white/10 bg-[#1c1c28] p-4 shadow-xl sm:block">
@@ -111,7 +111,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 sm:py-24">
+      <section className="py-14 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="flex items-end justify-between gap-6">
@@ -119,7 +119,7 @@ function Index() {
                 <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
                   <span className="h-px w-8 bg-[#F5C518]" /> What we do
                 </div>
-                <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-white sm:mt-4 sm:text-5xl">
                   What we do.
                 </h2>
               </div>
@@ -129,7 +129,7 @@ function Index() {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 sm:mt-12 lg:grid-cols-3">
             {SERVICES.map((s, i) => {
               const Icon = ICONS[s.slug] ?? Zap;
               return (
@@ -137,15 +137,15 @@ function Index() {
                   <Link
                     to="/services/$slug"
                     params={{ slug: s.slug }}
-                    className="group flex h-full flex-col bg-[#1c1c28] p-7 transition hover:bg-[#252535]"
+                    className="group flex h-full flex-col bg-[#1c1c28] p-5 transition hover:bg-[#252535] sm:p-7"
                   >
                     <div className="flex items-center justify-between">
                       <Icon className="h-6 w-6 text-[#F5C518]" />
                       <span className="font-mono text-xs text-white/35">0{i + 1}</span>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold text-white">{s.title}</h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60">{s.short}</p>
-                    <span className="mt-6 text-sm font-semibold text-[#F5C518] underline-offset-4 group-hover:underline">
+                    <h3 className="mt-5 font-display text-lg font-bold text-white sm:mt-8 sm:text-xl">{s.title}</h3>
+                    <p className="mt-1.5 flex-1 text-sm leading-relaxed text-white/60">{s.short}</p>
+                    <span className="mt-4 text-sm font-semibold text-[#F5C518] underline-offset-4 group-hover:underline sm:mt-6">
                       {SERVICE_CTA[s.slug]} →
                     </span>
                   </Link>
@@ -157,8 +157,8 @@ function Index() {
       </section>
 
       {/* WHY US */}
-      <section className="border-y border-white/10 bg-white/[0.02] py-14">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-4 lg:px-8">
+      <section className="border-y border-white/10 bg-white/[0.02] py-10 sm:py-14">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 sm:px-6 md:grid-cols-4 md:gap-10 lg:px-8">
           {[
             { k: "Established", v: "2014", sub: "Hull-based, family-run" },
             { k: "Engineers", v: "5", sub: "All NAPIT-registered" },
@@ -168,7 +168,7 @@ function Index() {
             <Reveal key={i} delay={i * 60}>
               <div>
                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">{s.k}</div>
-                <div className="mt-2 font-display text-4xl font-extrabold text-white">{s.v}</div>
+                <div className="mt-2 font-display text-3xl font-extrabold text-white sm:text-4xl">{s.v}</div>
                 <div className="mt-1 text-sm text-white/55">{s.sub}</div>
               </div>
             </Reveal>
@@ -177,21 +177,21 @@ function Index() {
       </section>
 
       {/* TESTIMONIALS — featured + list */}
-      <section className="py-20 sm:py-24">
+      <section className="py-14 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
               <span className="h-px w-8 bg-[#F5C518]" /> What customers say
             </div>
           </Reveal>
-          <div className="mt-10 grid gap-10 lg:grid-cols-12">
+          <div className="mt-8 grid gap-6 sm:mt-10 sm:gap-10 lg:grid-cols-12">
             <Reveal className="lg:col-span-7">
-              <figure className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 sm:p-10">
-                <div className="font-display text-5xl text-[#F5C518]">"</div>
-                <blockquote className="mt-2 font-display text-2xl font-medium leading-snug text-white sm:text-3xl">
+              <figure className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
+                <div className="font-display text-4xl text-[#F5C518] sm:text-5xl">"</div>
+                <blockquote className="mt-2 font-display text-xl font-medium leading-snug text-white sm:text-3xl">
                   {featured.text}
                 </blockquote>
-                <figcaption className="mt-8 flex items-center justify-between border-t border-white/10 pt-6">
+                <figcaption className="mt-6 flex items-center justify-between border-t border-white/10 pt-5 sm:mt-8 sm:pt-6">
                   <div>
                     <div className="font-display font-bold text-white">{featured.name}</div>
                     <div className="text-sm text-white/55">{featured.area} · {featured.service}</div>
@@ -230,7 +230,7 @@ function Index() {
       </section>
 
       {/* RECENT WORK */}
-      <section className="border-t border-white/10 bg-white/[0.02] py-20 sm:py-24">
+      <section className="border-t border-white/10 bg-white/[0.02] py-14 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="flex items-end justify-between gap-6">
@@ -238,7 +238,7 @@ function Index() {
                 <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
                   <span className="h-px w-8 bg-[#F5C518]" /> Recent jobs
                 </div>
-                <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-white sm:mt-4 sm:text-5xl">
                   Recent jobs.
                 </h2>
               </div>
@@ -247,15 +247,15 @@ function Index() {
               </Link>
             </div>
           </Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-4 lg:grid-cols-3">
             {WORK.slice(0, 6).map((w, i) => (
               <Reveal key={i} delay={i * 50}>
                 <div className="group relative overflow-hidden rounded-xl border border-white/10">
-                  <img src={w.img} alt={w.type} loading="lazy" className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105" />
+                  <img src={w.img} alt={w.type} loading="lazy" className="aspect-square w-full object-cover transition duration-700 group-hover:scale-105 sm:aspect-[4/3]" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-4">
-                    <span className="font-display text-base font-bold text-white">{w.type}</span>
-                    <span className="font-mono text-[10px] uppercase tracking-wider text-white/55">HU{i + 1}</span>
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-2.5 sm:p-4">
+                    <span className="font-display text-xs font-bold text-white sm:text-base">{w.type}</span>
+                    <span className="font-mono text-[9px] uppercase tracking-wider text-white/55 sm:text-[10px]">HU{i + 1}</span>
                   </div>
                 </div>
               </Reveal>
@@ -265,7 +265,7 @@ function Index() {
       </section>
 
       {/* SMART HOME */}
-      <section className="relative overflow-hidden border-y border-white/10 py-20 sm:py-24">
+      <section className="relative overflow-hidden border-y border-white/10 py-14 sm:py-24">
         <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
           <Reveal className="lg:col-span-7">
             <img src={nestLogo} alt="Google Nest Pro Installer Hull" className="h-11 w-auto" style={{ filter: "brightness(1.4)" }} />
