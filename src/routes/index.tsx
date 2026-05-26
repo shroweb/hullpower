@@ -120,7 +120,7 @@ function Index() {
                   <span className="h-px w-8 bg-[#F5C518]" /> What we do
                 </div>
                 <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-                  Six things, done properly.
+                  What we do.
                 </h2>
               </div>
               <Link to="/services" className="hidden text-sm font-semibold text-white/65 underline-offset-4 hover:text-[#F5C518] hover:underline md:inline">
@@ -239,7 +239,7 @@ function Index() {
                   <span className="h-px w-8 bg-[#F5C518]" /> Recent jobs
                 </div>
                 <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-                  A look at the last few weeks.
+                  Recent jobs.
                 </h2>
               </div>
               <Link to="/work" className="hidden text-sm font-semibold text-white/65 underline-offset-4 hover:text-[#F5C518] hover:underline md:inline">

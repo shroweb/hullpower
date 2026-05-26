@@ -30,7 +30,7 @@ export const SERVICES: Service[] = [
       "Indoor & security lighting",
       "EV charging point installation",
     ],
-    hero: "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80",
     badges: ["napit", "trustmark"],
   },
   {
@@ -63,7 +63,7 @@ export const SERVICES: Service[] = [
       "Certificates issued on completion",
       "Detailed remedial reporting",
     ],
-    hero: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
     badges: ["napit", "trustmark"],
   },
   {
@@ -79,7 +79,7 @@ export const SERVICES: Service[] = [
       "Festoon & feature lighting",
       "Pond, patio & decking lighting",
     ],
-    hero: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1558618048-fbd3e4c8df3b?auto=format&fit=crop&w=1600&q=80",
     badges: ["napit"],
   },
   {
@@ -118,22 +118,52 @@ export const SERVICES: Service[] = [
 ];
 
 export const WORK = [
-  { img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80", type: "Kitchen Rewire" },
+  { img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80", type: "Consumer Unit Upgrade" },
   { img: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1000&q=80", type: "EV Charger Install" },
-  { img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80", type: "Garden Lighting" },
+  { img: "https://images.unsplash.com/photo-1558618048-fbd3e4c8df3b?auto=format&fit=crop&w=1000&q=80", type: "Garden Lighting" },
   { img: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80", type: "Nest Thermostat" },
-  { img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80", type: "EICR Testing" },
-  { img: "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?auto=format&fit=crop&w=1000&q=80", type: "Consumer Unit" },
+  { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80", type: "EICR Inspection" },
+  { img: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=1000&q=80", type: "Full Rewire" },
   { img: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1000&q=80", type: "Security Lighting" },
   { img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80", type: "Office Fit-Out" },
-  { img: "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?auto=format&fit=crop&w=1000&q=80", type: "Smart Doorbell" },
+  { img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80", type: "Smart Doorbell" },
 ];
 
 export const TESTIMONIALS = [
-  { name: "Sarah W.", area: "Cottingham", text: "Booked a full kitchen rewire — turned up when they said, left the place spotless. Couldn't recommend Hull Power more.", service: "Kitchen Rewire" },
-  { name: "James P.", area: "Hessle", text: "Had our EV charger fitted in a morning. Friendly, tidy work and explained the app properly. Brilliant service.", service: "EV Charger" },
-  { name: "Emma L.", area: "Beverley", text: "Got a Nest doorbell and two cameras installed. Works flawlessly, looks like it came from the factory that way.", service: "Smart Home" },
-  { name: "Mark T.", area: "Anlaby", text: "Needed an emergency callout after a fuse board failure. With us within the hour and sorted same day. Top blokes.", service: "Fault Finding" },
-  { name: "Rachael B.", area: "Willerby", text: "Used Hull Power for the EICR on our rental — fast, fair priced and the certificate came through next day.", service: "EICR" },
-  { name: "David K.", area: "Kirk Ella", text: "Garden lighting install made the back garden look 10x better. They actually designed it, didn't just stick lights in.", service: "Garden Lighting" },
+  {
+    name: "Janet M.",
+    area: "Cottingham",
+    text: "Had them rewire our 1930s semi last spring — bit of a big job but they were done in three days, worked around us being in the house the whole time and left everywhere clean. Certificate came through same evening. Wouldn't hesitate.",
+    service: "Full Rewire",
+  },
+  {
+    name: "Steve H.",
+    area: "Hessle",
+    text: "Got a Zappi charger put in for the Tesla. Craig came out same week, sorted it in a few hours and walked me through the app and off-peak tariffs before he left. Dead easy from start to finish.",
+    service: "EV Charger",
+  },
+  {
+    name: "Louise B.",
+    area: "Beverley",
+    text: "They fitted a Nest doorbell, two outdoor cameras and a Protect in the kitchen. All linked up properly and they showed us how to use everything on the phone before they left. Very neat cable runs too — not a mess in sight.",
+    service: "Smart Home",
+  },
+  {
+    name: "Tony R.",
+    area: "Anlaby",
+    text: "Trip kept going on our board late on a Tuesday night. Rang up, back to me in 20 minutes and round first thing Wednesday. Loose neutral in the garage socket — found it, fixed it, good as new. Reasonable price for an emergency job.",
+    service: "Fault Finding",
+  },
+  {
+    name: "Karen S.",
+    area: "Willerby",
+    text: "Needed an EICR for the rental on Beverley Road before new tenants moved in. Booked Monday, done Wednesday, cert through Thursday. No fuss, fair price.",
+    service: "EICR",
+  },
+  {
+    name: "Phil D.",
+    area: "Kirk Ella",
+    text: "The garden lighting looks brilliant — they ran cables under the lawn for the pathway lights and mounted spots along the back fence. Did exactly what we discussed, no mess, and they were back within the week to finish off.",
+    service: "Garden Lighting",
+  },
 ];
