@@ -80,8 +80,8 @@ function Contact() {
               </a>
               <div className="overflow-hidden rounded-2xl border border-white/10">
                 <iframe
-                  title="Hull map"
-                  src="https://www.google.com/maps?q=Hull,+East+Yorkshire,+UK&output=embed"
+                  title="Hull Power Ltd location"
+                  src="https://maps.google.com/maps?q=Hull+Power+Ltd,+75+Lamorna+Ave,+Hull+HU8+8HT&t=&z=14&ie=UTF8&iwloc=&output=embed"
                   className="h-72 w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

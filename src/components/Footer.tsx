@@ -11,7 +11,7 @@ export function Footer() {
             src={logo}
             alt="Hull Power Ltd"
             className="h-12 w-auto"
-            style={{ filter: "drop-shadow(0 0 8px rgba(245,197,24,0.25)) brightness(1.65) contrast(1.08)" }}
+            style={{ filter: "brightness(1.65) contrast(1.08)" }}
           />
           <p className="mt-3 text-sm">
             Hull's trusted electricians. NAPIT approved, Trustmark certified,

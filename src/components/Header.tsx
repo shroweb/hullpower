@@ -23,7 +23,7 @@ export function Header() {
             src={logo}
             alt="Hull Power Ltd"
             className="h-12 w-auto"
-            style={{ filter: "drop-shadow(0 0 10px rgba(245,197,24,0.35)) brightness(1.65) contrast(1.08)" }}
+            style={{ filter: "brightness(1.65) contrast(1.08)" }}
           />
         </Link>
 

@@ -4,7 +4,8 @@ import { Reveal } from "@/components/Reveal";
 import { CtaStrip } from "@/components/CtaStrip";
 import { CredentialStrip } from "@/components/CredentialStrip";
 import { SERVICES, BOOK_URL, PHONE, PHONE_TEL } from "@/lib/site";
-import { Check, ArrowRight, Phone as PhoneIcon } from "lucide-react";
+import { Check, ArrowRight, Phone as PhoneIcon, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 export const Route = createFileRoute("/services/$slug")({
   component: ServicePage,
@@ -14,6 +15,24 @@ export const Route = createFileRoute("/services/$slug")({
     return { service };
   },
 });
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="bg-white/[0.02]">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+      >
+        <span className="font-display font-semibold text-white">{q}</span>
+        <ChevronDown className={`h-4 w-4 shrink-0 text-[#F5C518] transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="px-5 pb-5 text-sm leading-relaxed text-white/70">{a}</div>
+      )}
+    </div>
+  );
+}
 
 function ServicePage() {
   const { service } = Route.useLoaderData();
@@ -60,6 +79,17 @@ function ServicePage() {
                 </li>
               ))}
             </ul>
+
+            {service.faq && service.faq.length > 0 && (
+              <>
+                <h3 className="mt-14 font-display text-2xl font-bold text-white">Common questions</h3>
+                <div className="mt-6 divide-y divide-white/10 rounded-xl border border-white/10 overflow-hidden">
+                  {service.faq.map((item) => (
+                    <FaqItem key={item.q} q={item.q} a={item.a} />
+                  ))}
+                </div>
+              </>
+            )}
           </Reveal>
 
           <Reveal delay={120}>
