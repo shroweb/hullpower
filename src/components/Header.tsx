@@ -22,8 +22,8 @@ export function Header() {
           <img
             src={logo}
             alt="Hull Power Ltd"
-            className="h-11 w-auto brightness-125 contrast-110"
-            style={{ filter: "brightness(1.55) contrast(1.05)" }}
+            className="h-12 w-auto"
+            style={{ filter: "drop-shadow(0 0 10px rgba(245,197,24,0.35)) brightness(1.65) contrast(1.08)" }}
           />
         </Link>
 
