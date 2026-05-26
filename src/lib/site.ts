@@ -112,14 +112,14 @@ export const SERVICES: Service[] = [
       "Load balancing & smart tariffs",
       "DNO notifications handled",
     ],
-    hero: "https://images.unsplash.com/photo-1633307014450-bc8e4dc88f70?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1600&q=80",
     badges: ["napit", "ozev"],
   },
 ];
 
 export const WORK = [
   { img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80", type: "Kitchen Rewire" },
-  { img: "https://images.unsplash.com/photo-1633307014450-bc8e4dc88f70?auto=format&fit=crop&w=1000&q=80", type: "EV Charger Install" },
+  { img: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1000&q=80", type: "EV Charger Install" },
   { img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=80", type: "Garden Lighting" },
   { img: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80", type: "Nest Thermostat" },
   { img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80", type: "EICR Testing" },

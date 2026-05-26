@@ -16,7 +16,7 @@ const NAV = [
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0E0E12]/85 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#1c1c28]/90 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center" aria-label="Hull Power Ltd home">
           <img
@@ -60,7 +60,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#0E0E12] lg:hidden">
+        <div className="border-t border-white/10 bg-[#1c1c28] lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4">
             {NAV.map((n) => (
               <Link

@@ -98,7 +98,7 @@ function Index() {
               <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
                 <img src={van} alt="Hull Power Ltd Google Nest Pro Installer van" className="h-full w-full object-cover" />
               </div>
-              <div className="absolute -bottom-5 -left-5 hidden rounded-xl border border-white/10 bg-[#0E0E12] p-4 shadow-xl sm:block">
+              <div className="absolute -bottom-5 -left-5 hidden rounded-xl border border-white/10 bg-[#1c1c28] p-4 shadow-xl sm:block">
                 <div className="flex items-center gap-1 text-[#F5C518]">
                   {Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
                 </div>
@@ -137,7 +137,7 @@ function Index() {
                   <Link
                     to="/services/$slug"
                     params={{ slug: s.slug }}
-                    className="group flex h-full flex-col bg-[#0E0E12] p-7 transition hover:bg-[#13131a]"
+                    className="group flex h-full flex-col bg-[#1c1c28] p-7 transition hover:bg-[#252535]"
                   >
                     <div className="flex items-center justify-between">
                       <Icon className="h-6 w-6 text-[#F5C518]" />

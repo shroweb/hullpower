@@ -22,7 +22,7 @@ function ServicePage() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img src={service.hero} alt={service.title} className="h-full w-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E12] via-[#0E0E12]/85 to-[#0E0E12]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c28] via-[#1c1c28]/85 to-[#1c1c28]/40" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-28">
           <Reveal>

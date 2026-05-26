@@ -54,8 +54,8 @@ function Contact() {
                     <label className="mb-2 block text-sm font-semibold text-white/80">Service</label>
                     <select required defaultValue="" className="w-full rounded-md border border-white/15 bg-white/5 px-4 py-3 text-white outline-none focus:border-[#F5C518]">
                       <option value="" disabled>Select a service…</option>
-                      {SERVICES.map((s) => <option key={s.slug} value={s.slug} className="bg-[#0E0E12]">{s.title}</option>)}
-                      <option value="other" className="bg-[#0E0E12]">Something else</option>
+                      {SERVICES.map((s) => <option key={s.slug} value={s.slug} className="bg-[#1c1c28]">{s.title}</option>)}
+                      <option value="other" className="bg-[#1c1c28]">Something else</option>
                     </select>
                   </div>
                   <div className="sm:col-span-2">
