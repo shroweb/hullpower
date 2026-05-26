@@ -3,8 +3,5 @@
   "name": "hullpower",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "build": {
-    "command": "bun run build"
-  },
   "main": "src/server.ts",
 }
