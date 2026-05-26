@@ -1,3 +1,9 @@
+import gardenLighting from "@/assets/garden-lighting.jpg";
+import commercialFitout from "@/assets/commercial-fitout.webp";
+import nestProducts from "@/assets/nest-products.webp";
+import ledDownlights from "@/assets/led-downlights.webp";
+import nestVan from "@/assets/nest-van.webp";
+
 export const PHONE = "01482 784935";
 export const PHONE_TEL = "tel:+441482784935";
 export const EMAIL = "info@hullpower.co.uk";
@@ -96,7 +102,7 @@ export const SERVICES: Service[] = [
       "Hive heating & smart lighting",
       "Multi-zone heating control",
     ],
-    hero: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80",
+    hero: nestVan,
     badges: ["nest", "napit"],
   },
   {
@@ -120,13 +126,13 @@ export const SERVICES: Service[] = [
 export const WORK = [
   { img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80", type: "Consumer Unit Upgrade" },
   { img: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1000&q=80", type: "EV Charger Install" },
-  { img: "https://images.unsplash.com/photo-1558618048-fbd3e4c8df3b?auto=format&fit=crop&w=1000&q=80", type: "Garden Lighting" },
-  { img: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80", type: "Nest Thermostat" },
+  { img: gardenLighting, type: "Garden Lighting" },
+  { img: nestProducts, type: "Nest Smart Home" },
   { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80", type: "EICR Inspection" },
   { img: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&w=1000&q=80", type: "Full Rewire" },
-  { img: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1000&q=80", type: "Security Lighting" },
-  { img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80", type: "Office Fit-Out" },
-  { img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80", type: "Smart Doorbell" },
+  { img: ledDownlights, type: "LED Lighting" },
+  { img: commercialFitout, type: "Office Fit-Out" },
+  { img: nestVan, type: "Nest Pro Install" },
 ];
 
 export const TESTIMONIALS = [
